@@ -1,0 +1,14 @@
+#root{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+}
+#root div{
+    background-color: gray;
+    padding: 5px;
+    text-align: center;
+}
+#root div img{
+    width: 100%;
+
+}

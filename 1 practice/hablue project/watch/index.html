@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+        <div id="mywatch">
+            <span class="h"></span>
+            <span class="m"></span><br>
+            <span class="date"></span>
+            
+        </div>
+
+        <script> 
+            // function myTime(){
+            //     let myDate = new Date()
+            //     let hr,min = (myDate.getMinutes() < 10) ? "0" + myDate.getMinutes() : myDate.getMinutes(),
+            //         sec = (myDate.getSeconds() < 10) ? "0" + myDate.getSeconds() : myDate.getSeconds(),
+            //         m = (myDate.getHours() >= 12)? "PM" : "AM"
+
+
+            //     if(myDate.getHours() == 0){
+            //         hr = 12;
+            //     }else if(myDate.getHours() > 12){
+            //         hr = myDate.getHours() - 12
+            //     }else{
+            //        hr = myDate.getHours() 
+            //     }
+
+
+            //     let currenttime = hr + ":" + min + ":" + sec + ":"
+            //     document.getElementsByClassName("h")[0].innerHTML = currenttime
+            //     document.getElementsByClassName("m")[0].innerHTML = m
+
+
+            //     let myDay = ["Sunday", "monday", "Tuesday", "Wednesday","Thursday","Friday", "Saturday"],
+            //     myMonth = ["January", "February","march","april", "may", "june", "july", "August", "September", "October", "November", "December"],
+            //      day = myDate.getDate();
+
+
+            //     let currentDay =myDay[myDate.getDay()] + "," + myMonth[myDate.getMonth()] + day
+
+            //     document.getElementsByClassName("date")[0].innerHTML = currentDay
+            // }
+            // myTime()
+
+
+            // setInterval(function() {
+            //     myTime()
+            // },1000) -->
+
+            function myDate(){
+                let date = new Date()
+                let hr,min = (date.getMinutes() < 10)? "0" + date.getMinutes() : date.getMinutes(),
+                sec = (date.getSeconds() < 10 )? "0" + date.getSeconds : date.getSeconds(),
+                AmPm = (date.getHours >= 12)? "PM" : "AM"
+            
+
+                if(date.getHours() === 0){
+                    hr= 12
+                }else if(date.getHours() > 12){
+                    hr = date.getHours() - 12
+                }else{
+                    hr = date.getHours()
+                }
+
+                let curret = hr + ":" + min + ":" + sec + ":"
+                document.getElementsByClassName("h")[0].innerHTML = curret
+                document.getElementsByClassName("m")[0].innerHTML = AmPm
+
+
+
+                    let myDay = ["Sunday", "monday", "Tuesday", "Wednesday","Thursday","Friday", "Saturday"],
+                    myMonth = ["January", "February","march","april", "may", "june", "july", "August", "September", "October", "November", "December"],
+                    day = date.getDate();
+
+                let currentDayMonth = myDay[date.getDay()] + "," + myMonth[date.getMonth()] + day
+                document.getElementsByClassName("date")[0].innerHTML = currentDayMonth
+            
+            
+            }
+
+
+
+               
+
+
+                myDate()
+
+
+                setInterval(() => {
+                    myDate()
+                }, 1000)
+
+
+
+
+        </script>
+</body>
+</html>

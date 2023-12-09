@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #f1f1f1;
+}
+
+.container{
+    width: 500px;
+    height: 400px;
+    margin: 100px auto;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px dotted gray;
+    border-radius: 5px;
+    box-shadow: 2px 2px 12px black;
+    flex-direction: column;
+}
+.container.active{
+    border: 4px solid lawngreen;
+}
+.icon i{
+   font-size: 100px;
+   color: chartreuse;
+
+}
+.container h2{
+    font-weight: 400;
+
+}
+
+.container button{
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: rgb(0, 255, 0);
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+.container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+
+}

@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    background-color: #f1f1f1;
+}
+.myQuizApp{
+    width: 320px;
+    height: 580px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    box-shadow: 1px 3px 10px black;
+    transform: translate(-50%, -50%);
+    border-radius: 40px;
+    
+}
+
+.img img{
+    width: 100%;
+}
+
+.text1{
+    width: 90%;
+    margin: auto;
+}
+.text1 h3{
+    margin: 20px 0px 10px 0px;
+}
+.text1 p{
+    word-spacing: 0.1em;
+ 
+}
+.btn button{
+    padding: 8px 25px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: tomato;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.2s;
+    border-radius: 57px 0px 57px 0px;
+
+
+}
+
+.btn button:hover{
+    background-color: rgb(20, 220, 247);
+}
+.btn{
+    width: 60%;
+    margin-top: 64px;
+    margin-left: 178px !important;
+}
+
+
+
+
+
+
+
+/* Rilse page style start */
+
+.rulseBox{
+    width: 320px;
+    height: 580px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    box-shadow: 1px 3px 10px black;
+    transform: translate(-50%, -50%);
+    border-radius: 40px;
+    opacity: 0;
+    pointer-events: none;
+    
+}
+
+.rulseBox.activeinfo{
+    opacity: 1;
+    z-index: 5;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+.rulseList{
+    width: 80%;
+    margin: auto;
+}
+.rulseTitle{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid lightgray;
+    padding: 20px 0px;
+}
+
+ol li{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 18px;
+    line-height: 2em;
+}
+ol li span {
+    color: #007bff;
+}
+.button{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+}
+
+.button button{
+    padding: 8px 25px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: tomato;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.2s;
+    margin-top: 55px;
+}
+
+
+
+.btn1{
+    border-radius: 0px 57px 0px 57px;
+}
+.btn1:hover{
+    background-color: red;
+}
+
+
+.btn2{
+
+    border-radius: 57px 0px 57px 0px;
+
+
+}
+.btn2:hover{
+    background-color: rgb(20, 220, 247);
+}
+
+
+
+
+/* start exam */
+.question{
+    width: 320px;
+    height: 580px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    box-shadow: 1px 3px 10px black;
+    transform: translate(-50%, -50%);
+    border-radius: 40px;
+    opacity: 0;
+    pointer-events: none;
+}
+.question.activeQuiz{
+    opacity: 1;
+    z-index: 5;
+    pointer-events: auto;
+    transform: translate(-50% , -50%) scale(1);
+    
+}
+.QuestionHeader{
+    position: relative;
+    z-index: 2;
+    height: 70px;
+    padding: 0 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.QuestionHeader .title{
+    font-size: 15px;
+    font-weight: 600;
+}
+.Time-Count{
+    color: #004085;
+    background: #cce5ff;
+    height: 25px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 130px;
+}
+.second{
+    font-size: 18px;
+    font-weight: 500;
+    height: 26px;
+    width: 45px;
+    color: #fff;
+    border-radius: 5px;
+    /* line-height: 26px; */
+    text-align: center;
+    background: #343a40;
+    border: 1px solid #343a40;
+    user-select: none;
+
+    
+}
+.timeLine{
+     position: absolute;
+     bottom: 0px;
+     left: 0px;
+     height: 3px;
+     background: #007bff;
+}
+
+
+.section{
+    padding: 25px 30px 20px 30px;
+
+}
+
+.text{
+font-size: 25px;
+font-weight: 600;
+line-height: 1.8em;
+}
+.myOption{
+    padding: 20px 0px;
+    display: block;
+}
+
+.option{
+    background: aliceblue;
+    border: 1px solid #84c5fe;
+    border-radius: 5px;
+    padding: 13px 15px;
+    font-size: 14px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.option:hover{
+    color: #004085;
+    background: #cce5ff;
+    border: 1px solid #b8daff;
+}
+
+footer{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid lightgrey;
+}
+
+.total-que{
+    position: absolute;
+    left: 15px;
+    bottom: 50px;
+}
+footer button{
+    padding: 8px 25px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: tomato;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.2s ease;
+    border-radius: 57px 0px 57px 0px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+footer button:hover{
+    background-color: rgb(20, 220, 247);
+}
+
+.option.correct{
+    color: #fff;
+    background: #3eb85b;
+    border: 1px solid #c3e6cb;
+}
+.option.InCorrect{
+    color: red;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+.option.disabled{
+    pointer-events: none;
+}

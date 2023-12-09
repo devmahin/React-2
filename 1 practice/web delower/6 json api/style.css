@@ -1,0 +1,13 @@
+#product{
+    width: 300px;
+    padding: 10px;
+    background-color: gray;
+}
+#product img{
+    width: 100%;
+}
+#root{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
